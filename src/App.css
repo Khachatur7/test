@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+body {
+    width: 100vw;
+    background: #1C1A1A;
+    margin: 0;
+    padding: 0;
+    font-family: Teko;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 1px;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    height: 900px;
+    padding: 40px 0px;
+}
+
+.container {
+    position: relative;
+    max-width: 1500px;
+    width: 91%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.background_images {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.bitcoin {
+    animation: bitcoin 2s ease-in-out alternate infinite;
+}
+
+@keyframes bitcoin {
+    from {}
+
+    to {
+        transform: translate(15px, -15px);
+    }
+}
+
+#litecoin {
+    transform: translateX(-70%);
+}
+
+.litecoin {
+    animation: litecoin 2s ease-in-out alternate infinite;
+}
+
+@keyframes litecoin {
+    from {}
+
+    to {
+        transform: translateX(-80%) translateY(-20px);
+    }
+}
+
+.ethereum {
+    animation: ethereum 2s ease-in-out alternate infinite;
+}
+
+@keyframes ethereum {
+    from {}
+
+    to {
+        transform: translate(-20px, 20px);
+    }
+}
+
+.hero_title {
+    width: 1000px;
+    font-size: 80px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
+.hero_title_with_color {
+    background: linear-gradient(90deg, #7c6fcff7 0%, #74aeaaf2 25%, #6FCF97 50%, #7c6fcff7 75%, #6FCF97 100%);
+    background-size: 200%;
+    background-position: left;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: title_with_color 3s ease-in-out alternate infinite;
+}
+
+@keyframes title_with_color {
+    from {}
+
+    to {
+        background-position: right;
+    }
+}
+
+.hero_subtitle {
+    color: #828282;
+    font-weight: 400;
+    font-size: 34px;
+    margin-bottom: 90px;
+}
+
+.info_blocks {
+    display: flex;
+    gap: 130px;
+    margin-bottom: 100px;
+}
+
+.num {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.name {
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff8e;
+}
+
+.bttn {
+    all: unset;
+    position: relative;
+    background: linear-gradient(90deg, #7c6fcff7 0%, #74aeaaf2 49.13%, #6FCF97 100%);
+    border-radius: 20px;
+    padding: 14px 200px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #1C1A1A;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+    margin-bottom: 80px;
+}
+
+.bttn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 20px;
+    z-index: -1;
+    background: linear-gradient(90deg, #7c6fcff7 0%, #74aeaaf2 49%, #6FCF97 100%);
+    transition: 0.4s ease-in-out;
+    filter: blur(0px);
+}
+
+.bttn:hover::before {
+    filter: blur(120px);
+}
+
+.stores {
+    display: flex;
+    gap: 40px;
+}
+
+.store {
+    width: 130px;
+    height: 50px;
+    background: linear-gradient(90deg, #7c6fcff7 0%, #74aeaaf2 25%, #6FCF97 50%, #302D2D57 50% 100%);
+    background-size: 200%;
+    background-position: right;
+    padding: 10px 8px 0px 4px;
+    border-radius: 10px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff8e;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.4s ease-out;
+}
+
+.store:hover {
+    background-position: left;
+}
+
+.store_svg svg {
+    width: 24px;
+    height: 24px;
+}
+
+.store_description {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.store_name {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.commentators {
+    position: absolute;
+    right: 10px;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.commentator {
+    max-width: 288px;
+    max-height: 138px;
+    border: 1px solid #aaffbf5d;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    padding: 16px 0px 16px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: start;
+    gap: 16px;
+    font-size: 18px;
+    cursor: default;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 0px 0px 5px #6fcf9700;
+}
+
+.commentator:hover {
+    box-shadow: 0px 0px 0px 5px #6fcf977c;
+
+}
+
+.commentator:nth-child(2n+1) {
+    transform: translateX(10%);
+}
+
+.commentator:nth-child(2n) {
+    transform: translateX(-20%);
+}
+
+.commentators_info {
+    display: flex;
+    gap: 20px;
+}
+
+.commentators_img img {
+    width: 48px;
+    height: 48px;
+}
+
+.commentators_name_and_email {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: start;
+}
+
+.commentators_name {
+    font-weight: 600;
+}
+
+.commentators_email {
+    color: #ffffff8e;
+    font-size: 16px;
+}
+
+.commentators_comment {
+    width: 90%;
+    font-weight: 400;
+}
+
+@media (max-width:320px) {
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+        padding: 20px 0px 20px 0px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 0px 10px;
+        flex-direction: column;
+        padding: 20px 0px;
+    }
+
+    .background_images {
+        top: 30px;
+        position: fixed;
+    }
+
+    .bitcoin img,
+    .litecoin img,
+    .ethereum img {
+        width: 160px;
+    }
+
+    #litecoin {
+        transform: translateY(-100px) translateX(-150px);
+    }
+
+    .ethereum {
+        transform: translateY(-100px) translateX(-20px);
+    }
+
+
+    @keyframes litecoin {
+        from {}
+
+        to {
+            transform: translateY(-90px) translateX(-140px);
+        }
+    }
+
+    @keyframes ethereum {
+        from {}
+
+        to {
+            transform: translate(0px, -90px);
+        }
+    }
+
+
+    .hero_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero_title {
+        font-size: 40px;
+        text-align: center;
+        word-wrap: break-word;
+        width: 287px;
+        margin-bottom: 20px;
+    }
+
+    .hero_subtitle {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .info_blocks {
+        flex-wrap: nowrap;
+        gap: 40px;
+        margin-bottom: 30px;
+    }
+
+    .num {
+        font-size: 28px;
+    }
+
+    .name {
+        font-size: 12px;
+
+    }
+
+    .bttn {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+
+    }
+
+    .store {
+        width: 100px;
+        padding: 4px 8px;
+    }
+
+    .store_name {
+        font-size: 14px;
+    }
+
+    .store_description {
+        font-size: 10px;
+    }
+
+    .store img {
+        width: 20px;
+    }
+
+    .commentators {
+        display: none;
+    }
+
+}
