@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/test/static/css/main.58d64951.css",
+    "main.js": "/test/static/js/main.eb622bff.js",
+    "static/media/Rushana.png": "/test/static/media/Rushana.d397a838a76b336fbd50.png",
+    "static/media/Adalina.png": "/test/static/media/Adalina.f832bc3be0c81f46b5ca.png",
+    "static/media/Lorenzo.png": "/test/static/media/Lorenzo.ab23954cb8b999a4b65c.png",
+    "static/media/Alexander.png": "/test/static/media/Alexander.5fc343db3a3ae7eb68f5.png",
+    "static/media/Ethereum.svg": "/test/static/media/Ethereum.c066b4c9284fab32877b3cfc1bf09397.svg",
+    "static/media/Bitcoin.svg": "/test/static/media/Bitcoin.056c3a82ae2fd932f6b97af96bd6d713.svg",
+    "static/media/apple-store.svg": "/test/static/media/apple-store.19c06362054d2d726935f38c7daddb03.svg",
+    "static/media/Litecoin.svg": "/test/static/media/Litecoin.8298c092195e9bad2e8621e0702d65a7.svg",
+    "static/media/google-play.svg": "/test/static/media/google-play.2f6f74ad192678242007b4806d985003.svg",
+    "index.html": "/test/index.html",
+    "main.58d64951.css.map": "/test/static/css/main.58d64951.css.map",
+    "main.eb622bff.js.map": "/test/static/js/main.eb622bff.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58d64951.css",
+    "static/js/main.eb622bff.js"
+  ]
+}
